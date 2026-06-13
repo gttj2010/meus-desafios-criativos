@@ -42,6 +42,17 @@ Contexto: Os insights gerados por você serão consumidos por diretores de produ
 
 Dados disponíveis: Serão fornecidos blocos de comentários contendo a data do registro, canal de origem, o relato livre do usuário, o produto correspondente e a nota atribuída de 1 a 5.
 
+---
+
+## 🧱 Passo 4: Observações Pessoais e Insights
+
+*   **Bagagem Prática e Evolução Técnica:** Este desafio possui forte sinergia com a minha trajetória profissional. Em uma experiência anterior na empresa **Assim Saúde**, desenvolvi e implementei uma solução automatizada de análise de sentimento e triagem de relatos utilizando **Excel + VBA**.
+*   **Arquitetura do Sistema de Classificação:** O algoritmo foi construído simulando um modelo de PLN (Processamento de Linguagem Natural) primitivo: o código realizava o *parsing* textual (varredura palavra por palavra) de cada célula e confrontava os termos com uma aba matriz que funcionava como um dicionário dinâmico de padrões, segmentando os dados em **5 categorias de classificação**.
+*   **Mecanismo de Aprendizado Ativo (Human-in-the-Loop):** Como mapear todas as nuances da linguagem humana logo no primeiro deploy é impossível, o sistema foi desenhado para rodar um fluxo de melhoria contínua. Periodicamente, o usuário revisava os desvios e classificações incorretas e alimentava a aba de dicionário com novos parâmetros de pesos e palavras-chave. Esse refinamento incremental garantiu que o código VBA ficasse progressivamente mais robusto, atingindo uma sólida **taxa de acerto inicial de 80%** na assertividade das respostas do relatório gerado.
+*   **Paralelo com a IA Generativa:** Esse histórico prático destaca o valor disruptivo da Engenharia de Prompts. O que antes exigia loops complexos no VBA, rotinas exaustivas de manutenção de dicionários e tratamento manual de strings para evitar falsos positivos, hoje pode ser abstraído com eficiência utilizando LLMs através de instruções semânticas claras, restrições explícitas de segurança e formatação nativa (como as aplicadas no Passo 3).
+
+---
+
 Instruções de análise aplicadas:
 1. Classifique cada feedback cruzando o tema principal com a análise de sentimento (Positivo, Neutro ou Negativo) e defina um nível de urgência (Alta, Média, Baixa).
 2. Identifique os 3 problemas mais recorrentes que demandam atenção imediata e os associe a evidências textuais curtas extraídas dos dados fornecidos.
